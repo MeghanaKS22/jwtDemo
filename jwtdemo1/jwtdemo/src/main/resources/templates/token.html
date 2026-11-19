@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Token Page</title>
+</head>
+<body>
+<h1>You're Authenticated,here is your token</h1>
+<textarea rows="8" cols="60" th:text="${token}"></textarea>
+<br> <br>
+<a th:href="@{/home(token=${token})}">Token Test</a>
+</body>
+</html>

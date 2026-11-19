@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body style="padding:40">
+<h1>You accessed the Protected Resource</h1>
+
+<p>Username: <span th:text="${username}"></span></p>
+<br>
+<br>
+<p th:text="${success}"></p>
+<a href="/login">Go back to Login</a>
+</body>
+</html>
